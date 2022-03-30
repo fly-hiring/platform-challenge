@@ -1,0 +1,44 @@
+{
+  "Apps": [
+    {
+      "Name": "five-thousand",
+      "Ports": [
+        5001,
+        5200,
+        5300,
+        5400
+      ],
+      "Targets": [
+        "tcp-echo.fly.dev:5001",
+        "tcp-echo.fly.dev:5002"
+      ]
+    },
+    {
+      "Name": "six-thousand",
+      "Ports": [
+        6001,
+        6200,
+        6300,
+        6400
+      ],
+      "Targets": [
+        "tcp-echo.fly.dev:6001",
+        "tcp-echo.fly.dev:6002",
+        "bad.target.for.testing:6003"
+      ]
+    },
+    {
+      "Name": "seven-thousand",
+      "Ports": [
+        7001,
+        7200,
+        7300,
+        7400
+      ],
+      "Targets": [
+        "tcp-echo.fly.dev:7001",
+        "tcp-echo.fly.dev:7002"
+      ]
+    }
+  ]
+}
