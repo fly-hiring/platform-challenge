@@ -4,7 +4,7 @@ Hello! This is a hiring project for our Senior Platform Engineering position. If
 
 ## The Job 
 
-<link to post and tidy up with summary of the post>
+> link to post and tidy up with summary of the post
 
 As a Platform Engineer at Fly.io, you'll be working on the product we sell to customers and the infrastructure needed to operate it. 
 
