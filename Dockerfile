@@ -33,9 +33,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && \
   && rm -rf /linux-5.13
 
 # install go
-ENV PATH=/usr/local/go/bin:$PATH \
-  GOPATH=/go \
-  PATH=$GOPATH/bin:$PATH
+ENV GOPATH="/go"
+ENV PATH="/usr/local/go/bin:$GOPATH/bin:$PATH" 
+
 RUN curl -L https://go.dev/dl/go1.18.linux-amd64.tar.gz | tar -xz -C /usr/local;
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 
