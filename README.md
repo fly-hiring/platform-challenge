@@ -77,9 +77,9 @@ Update the `NOTES.md` file from Part 1 to cover:
 
 ## Submitting your work
 
-You'll get an invite to a private GitHub repo in a few minutes. Do all of your work there. When you're ready for us to review, open a PR and let us know.
+We'll invite you to a private GitHub repo based on this template. Do all of your work there. When you're ready for us to review, let us know.
 
-Let us know what email address you registered with Fly and we'll give you some credits so you can play around.
+Let us know what email address you registered with Fly and we'll give you some credits so you can play around or launch a dev environment.
 
 ## Tips and Tricks
 
