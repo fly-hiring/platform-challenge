@@ -1,20 +1,10 @@
-# Platform Engineering Hiring Project
+# Platform Engineer Hiring Project
 
-Hello! This is a hiring project for our Senior Platform Engineering position. If you apply, we'll ask you to do this project so we can see how you work through a contrived (yet shockingly accurate) example of the type of things you'd do at Fly.io.
+Hello! This is a hiring project for our [Platform Engineer position](https://fly.io/jobs/platform-product-engineer/). If you apply, we'll ask you to do this project so we can see how you work through a contrived (yet shockingly accurate) example of the type of things you'd do at Fly.io.
 
 ## The Job 
 
-> link to post and tidy up with summary of the post
-
-As a Platform Engineer at Fly.io, you'll be working on the product we sell to customers and the infrastructure needed to operate it. 
-
-Examples:
-- VM orchistration (flyd)
-- volumes
-- builds and deployments
-- networking
-- metrics & logs
-- graphql API and main database
+As a Platform Engineer at Fly.io, you'll be working on the product we sell to customers and the infrastructure needed to operate it. Checkout the [job post](https://fly.io/jobs/platform-product-engineer/) for the nitty gritty.
 
 ## Hiring Project
 
