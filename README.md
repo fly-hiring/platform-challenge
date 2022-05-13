@@ -15,6 +15,7 @@ The most significant software component in Fly.io’s architecture is our `fly-p
 - Generating fine-grained Prometheus metrics for customer applications.
 - Routing WebSockets connections to VMs transparently.
 - Forwarding raw TCP connections for non-web applications.
+
 What we’d like you to do for this coding challenge is to implement your own version of this proxy, so we can see how you’d do it if you were in our shoes.
 
 OBVIOUSLY WE ARE KIDDING.
@@ -29,13 +30,14 @@ Criteria
 - We can run your code with `go run`
 - It listens on each port listed in the config file. Connections to any of those ports routes to one of the correct app's targets.
 - If an app has multiple targets, you should have a sensible way of balancing between targets.
-- The target you pick might vanish after you make the forwarding decision and before the connection completes. If there are multiple targets available, the connection should still work.
+- If the target you've chosen is unavailable for whatever reason, the connection should still work if there are multiple targets available.
 
 Along with your code, include a `NOTES.md` that goes over:
-- a short summary of what you built
-- how you add hot config reloading that doesn't break existing connections
-- what might break if your proxy were under heavy load
-- what, if anything, you'd improve if you had more time
+- A short summary of what you built and how it works
+- How you might add hot config reloading that doesn't break existing connections if apps and targets change
+- What might break under a production load? What needs to happen before your proxy is production ready?
+- If this were deployed to production at Fly.io, is there anything you could do with your proxy that would make our customers happy?
+- If you were starting over, is there anything you'd do differently?
 
 ### Part 2 - BPF Steering
 
@@ -62,12 +64,13 @@ Update the `NOTES.md` file from Part 1 to cover:
 - Even though you may be new to BPF, you're able to figure out enough to make it work.
 - Your code should be clear and idiomatic.
 - It's okay to deliver complicated features as written notes rather than code, but if you're able to bang them out, go for it.
-- Don't spend time making this perfect. Rough edges are fine if it helps you move quickly, just explain shortcuts in the notes.
+- Don't spend time making this perfect. Rough edges are fine if it helps you move quickly. It's okay to skip the last 20% to make it production ready, but you should know what that 20% is and explain it in the notes.
 - Don't spend time on tests for this project.
+- Don't skimp on the notes. Code is important, but understanding your thought process is far more insightful.
 
 ## Submitting your work
 
-We'll invite you to a private GitHub repo based on this template. Do all of your work there. When you're ready for us to review, let us know.
+We'll invite you to a private GitHub repo based on this template. Do all of your work in the `main` branch. Don't bother with PRs or tidy commits. We only care about the end result and have software to help us review. When you're ready, let us know and we'll schedule it for review. We review submissions once a week. You'll hear back from us no matter what by the end of the _following_ week, possibly sooner if you submit early in the week.
 
 Let us know what email address you registered with Fly and we'll give you some credits so you can play around or launch a dev environment.
 
@@ -75,5 +78,6 @@ Let us know what email address you registered with Fly and we'll give you some c
 
 - You can use our test echo server for app backends: https://tcp-echo.fly.dev 
 - You can use netcat to test your proxy `echo "hello" | nc -N -4 localhost 6300`
+- You can run a dev server on Fly.io if you don't have access to a Linux machine for the eBPF part.
 
 Have fun!
