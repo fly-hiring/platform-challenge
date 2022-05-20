@@ -70,7 +70,7 @@ Update the `NOTES.md` file from Part 1 to cover:
 
 ## Submitting your work
 
-We'll invite you to a private GitHub repo based on this template. Do all of your work in the `main` branch. Don't bother with PRs or tidy commits. We only care about the end result and have software to help us review. When you're ready, let us know and we'll schedule it for review. We review submissions once a week. You'll hear back from us no matter what by the end of the _following_ week, possibly sooner if you submit early in the week.
+We'll invite you to a private GitHub repo based on this template. Do all of your work in the `main` branch. We only care about the end result, no need to preserve the non-BPF implementation. Don't bother with PRs, branches, or spend time on tidy commits -- we have software to help us review. Just don't force push over the initial commit or we can't generate a diff of only your work. When you're ready, let us know and we'll schedule it for review. We review submissions once a week. You'll hear back from us no matter what by the end of the _following_ week, possibly sooner if you submit early in the week.
 
 Let us know what email address you registered with Fly and we'll give you some credits so you can play around or launch a dev environment.
 
