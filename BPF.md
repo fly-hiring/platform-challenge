@@ -4,7 +4,7 @@ We don't want you spinning your wheels, so if this isn't enough to get you unstu
 
 ### Prerequesites:
 
-You'll need a Linux host running kernel >= 5.9 (when they introduced sk_lookup) to build and run your BPF program. Linux in Docker on an M1 Mac will _not_ work. WSL2 on Windows or Docker on Intel macs might work, though we haven't tried. If you don't have access to a Linux box and can't run a VM you can spin up a dev VM on Fly.
+You'll need a Linux host running kernel >= 5.9 (when they introduced sk_lookup) to build and run your BPF program. WSL2 on Windows or Docker on mac or windows will _not_ work. If you don't have access to a Linux box and can't run a VM you can spin up a dev VM on Fly.
 
 You'll need the following tools and libraries installed:
   - `bpftool` compiled for a >= 5.9 kernel, because pre-5.9 `bpftool` doesn't know what an sk_lookup program is.
