@@ -36,7 +36,6 @@ We’ve “helpfully” included in this repo a `config.json` file to illustrate
 * If the target you’ve chosen is unavailable for whatever reason, the connection should still work if there are multiple targets available.
 Along with your code, include a NOTES.md that goes over:
 * A short summary of what you built, how it works, and how you landed on this design
-* How you might add hot config reloading that doesn’t break existing connections if apps and targets change
 * What might break under a production load? What needs to happen before your proxy is production ready?
 * If this were deployed to production at Fly.io, is there anything you could do with your proxy that would make our customers happy?
 * If you were starting over, is there anything you’d do differently?
