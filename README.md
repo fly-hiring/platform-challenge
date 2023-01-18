@@ -34,6 +34,7 @@ We’ve “helpfully” included in this repo a `config.json` file to illustrate
 * It listens on each port listed in the config file. Connections to any of those ports routes to one of the correct app’s targets.
 * If an app has multiple targets, you should have a sensible way of balancing between targets.
 * If the target you’ve chosen is unavailable for whatever reason, the connection should still work if there are multiple targets available.
+
 Along with your code, include a NOTES.md that goes over:
 * A short summary of what you built, how it works, and how you landed on this design
 * What might break under a production load? What needs to happen before your proxy is production ready?
