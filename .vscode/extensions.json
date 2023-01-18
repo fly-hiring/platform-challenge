@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "ms-vscode.cpptools",
     "golang.go"
   ]
 }
